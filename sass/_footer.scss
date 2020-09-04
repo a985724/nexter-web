@@ -23,6 +23,7 @@
   &__item {
     padding: 1rem;
     transition: all .3s;
+    justify-self: center;
     &:hover {
       transform: translateY(-5px);
       background-image: linear-gradient(rgba(#fff, .3), rgba(#fff, .3)) 
