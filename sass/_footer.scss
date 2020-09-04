@@ -13,6 +13,7 @@
 .nav {
   display: grid;
   grid-template-columns: repeat(6, minmax(10rem, 1fr));
+  column-gap: .5rem;
   list-style: none;
   justify-content: center;
   font-size: 2rem;
@@ -20,6 +21,11 @@
   @media only screen and (max-width:$bp-medium) {
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
   }
+
+  @media only screen and (max-width:$bp-smallest) {
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  }
+
   &__item {
     padding: 1rem;
     transition: all .3s;
@@ -28,7 +34,7 @@
       transform: translateY(-5px);
       background-image: linear-gradient(rgba(#fff, .3), rgba(#fff, .3)) 
     }
-  } 
+  }
   
   &__link {
     text-decoration: none;

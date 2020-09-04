@@ -32,7 +32,7 @@
   &::after {transform: translateY(1rem);}
 
   @media only screen and (max-width: $bp-large) {
-    transform: translateY(-1rem);
+    transform: translateY(-2rem);
     margin-left: auto;
     margin-right: 2.5rem;
   }
