@@ -1,0 +1,39 @@
+.sidebar {
+  background-color: $color-primary;
+  grid-row: 1 / 10;
+  grid-column: sidebar-start / sidebar-end;
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-row: 1 / 2;
+    grid-column: full-start / full-end;
+  }
+}
+
+.nav-btn {
+  border: none;
+  border-radius: 0;
+  width: 5rem;
+  height: 3px;
+  margin-top: 4rem;
+  background-color: #fff;
+  text-align: center;
+  &::before,
+  &::after {
+    content: "";
+    width: 5rem;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+  }
+
+  &::before {transform: translateY(-1.2rem);}
+  &::after {transform: translateY(1rem);}
+
+  @media only screen and (max-width: $bp-large) {
+    transform: translateY(-1rem);
+    margin-left: auto;
+    margin-right: 2.5rem;
+  }
+}
