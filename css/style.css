@@ -206,7 +206,7 @@ body {
         height: 8rem; } }
   .realtors__sold {
     color: #aaa;
-    font-size: 2rem; }
+    font-size: 1.5rem; }
 
 .features {
   grid-column: center-start / center-end;
@@ -343,7 +343,8 @@ body {
     .home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
       fill: #c69963;
       width: 2rem;
-      height: 2rem; }
+      height: 2rem;
+      margin-right: 1rem; }
 
 .gallery {
   background-color: #f9f7f6;
