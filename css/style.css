@@ -28,8 +28,7 @@ body {
       grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
   @media only screen and (max-width: 50em) {
     .container {
-      grid-template-rows: 6.5vh 93.5vh 20vh repeat(2, min-content) 50vw repeat(3, min-content);
-      grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
+      grid-template-rows: 6.5vh 93.5vh 20vh repeat(2, min-content) 50vw repeat(3, min-content); } }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
@@ -176,7 +175,9 @@ body {
     grid-template-columns: min-content max-content;
     row-gap: 5vh;
     column-gap: 2rem;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    align-items: center; }
     @media only screen and (max-width: 50em) {
       .realtors__list {
         grid-template-columns: repeat(3, min-content max-content);
@@ -184,9 +185,11 @@ body {
         margin-top: 1.2rem;
         align-items: center;
         margin: 0 auto; } }
+  .realtors__details {
+    align-self: center; }
   .realtors__img {
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%; }
     @media only screen and (max-width: 50em) {
       .realtors__img {
@@ -194,7 +197,7 @@ body {
         height: 8rem; } }
   .realtors__sold {
     color: #aaa;
-    font-size: 1.4rem; }
+    font-size: 2rem; }
 
 .features {
   grid-column: center-start / center-end;
@@ -399,16 +402,20 @@ body {
   background-color: #101d2c;
   grid-column: full-start/ full-end;
   grid-row: 9 / 10;
-  padding: 10rem; }
+  padding: 8rem; }
   @media only screen and (max-width: 50em) {
     .footer {
       padding: 5rem; } }
 
 .nav {
   display: grid;
-  grid-template-columns: repeat(6, minmax(20rem, 1fr));
+  grid-template-columns: repeat(6, minmax(10rem, 1fr));
   list-style: none;
-  margin: 0 auto; }
+  justify-content: center;
+  font-size: 2rem; }
+  @media only screen and (max-width: 50em) {
+    .nav {
+      grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); } }
   .nav__item {
     padding: 1rem;
     transition: all .3s; }

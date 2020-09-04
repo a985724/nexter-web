@@ -17,6 +17,8 @@
     row-gap: 5vh;
     column-gap: 2rem;
     margin-top: 2rem;
+    font-size: 2.5rem;
+    align-items: center;
     
     @media only screen and (max-width:$bp-medium) {
       grid-template-columns: repeat(3, min-content max-content) ;
@@ -28,9 +30,13 @@
     } 
   }
 
+  &__details {
+    align-self: center;
+  }
+
   &__img{
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     @media only screen and (max-width:$bp-medium) {
       width: 8rem;
@@ -40,6 +46,6 @@
 
   &__sold {
     color: $color-grey-light-2;
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 }
