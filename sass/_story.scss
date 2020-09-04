@@ -4,7 +4,7 @@
     grid-column: full-start / col-end 4;
 
     display: grid;
-    background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)), url(/img/back.jpg);
+    background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)), url(../img/back.jpg);
     background-size: cover;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(6, 1fr);
@@ -38,7 +38,6 @@
       grid-column: 4 / 7;
       grid-row: 3 / 5;
       width: 100%;
-      height: fit-content;
     }
   }
 
